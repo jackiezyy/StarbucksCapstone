@@ -16,7 +16,9 @@ This project was written in Python, using Jupyter Notebook on Anaconda. The rele
 - sklearn.model_selection (train_test_split module)
 - sklearn.metrics (roc_auc_score)
 - sklearn.linear_model (Ridge)
-- sklearn.model_selection (GridSearchCV, cross_val_score)
+- sklearn.model_selection (cross_val_score)
+- hyperopt
+- partial
 - matplotlib
 
 ### 2. Project
@@ -26,7 +28,7 @@ Problem Statement:
 What drives Starbucks user to respond to an offer?
 
 Conclusion:
-The model indicates that income is the biggest predictor of the effectiveness of an offer. Whether the offer is posted on social media and tenure of a member are the two next important features. Offer duration is also an important feature but relatively unimportant compared with the other three.
+The AUC of the model is 0.754. In addition, the model indicates whether an offer type is discount is the biggest predictor of the effectiveness of an offer. Whether the offer is posted on social media and income and tenure of a member are the three next important features. Offer duration is also an important feature. AUC = 0.5 is equal to random guess. Based on AUC value, our model has pretty strong predictive power. Moreover, feature importance is also aligned with common sense.
 
 ### 3. File Descriptions
 This repo contains 4 files. 
